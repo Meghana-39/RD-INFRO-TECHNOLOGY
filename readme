@@ -1,0 +1,66 @@
+# COVID-19 Severity Prediction Tool 
+
+##  Project Overview
+This project is a **COVID-19 Patient Severity Prediction Tool** developed as part of **Task 8** of the Machine Learning Internship Program.
+The application predicts whether a patient **requires hospitalization** based on clinical symptoms using a trained Machine Learning model and provides **risk level classification**.
+The model is deployed as an **interactive web application using Streamlit**.
+
+## Problem Statement
+Predict COVID-19 patient severity (Hospitalization Required / Not Required) based on symptoms such as:
+- Age
+- Fever
+- Cough
+- Fatigue
+- Shortness of Breath
+
+## 🛠️ Tools & Technologies Used
+- **Python**
+- **Scikit-learn** (Machine Learning model)
+- **Streamlit** (UI Deployment)
+- **Joblib** (Model Serialization)
+- **GitHub** (Version Control)
+
+##  Features
+- Interactive UI for symptom input
+- Real-time prediction
+- Risk Level Classification:
+  - 🟢 Low Risk
+  - 🟡 Medium Risk
+  - 🔴 High Risk
+- Clear hospitalization recommendation
+
+## 📊 Risk Level Logic
+| Risk Level | Conditions |
+|-----------|------------|
+| Low | Mild symptoms |
+| Medium | Age > 50 with symptoms |
+| High | Shortness of breath + multiple symptoms |
+
+## Application Screenshots
+
+###  User Interface
+![UI Screenshot](screenshots/ui.png)
+###  Prediction Result
+![Prediction Screenshot](screenshots/prediction.png)
+
+## How to Run the Application
+### 1️. Install Dependencies
+pip install -r requirements.txt
+2. Run Streamlit App
+streamlit run task8_streamlit_app.py
+️3. Open Browser
+http://localhost:8501
+Project Structure
+RD-INFRO-TECHNOLOGY/
+│
+├── task8_streamlit_app.py
+├── covid_severity_best_model.pkl
+├── requirements.txt
+├── README.md
+└── screenshots/
+    ├── ui.png
+    └── prediction.png
+👩‍💻 Author
+Meghana
+B.Tech Student
+Machine Learning Intern
